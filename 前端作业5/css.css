@@ -1,0 +1,121 @@
+.nav {background-color: grey;
+height: 55px;}                       
+.box{ color: crimson;font-size: 30px;height: 35px; line-height: 35px;}
+ .nav li{
+    float: right;
+    height :35px;
+    line-height: 35px;
+    margin-right: 10px;
+}
+.nav a{ text-decoration: none;
+        color: ivory;
+        display: block;
+  padding: 11px;
+   float: left;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+.nav :hover{
+    background-color: rgb(173, 173, 156);
+    color: lavender;
+}
+.text1{background-color: rgb(247, 240, 242);
+width: 1000px;
+height: 1000px;}
+.text2 { background-color: rgb(247, 240, 242);
+    width: 1000px;
+    height: 1000px;}
+.photo {background-color: rgb(247, 240, 242);
+    width: 1000px;
+    height: 600px;} 
+.text3 {background-color: aliceblue;
+    width: 1000px;
+    height: 600px;}
+.right {background-color: aliceblue;
+    width: 200px;
+    height: 400px;
+    float: right;
+    
+}
+
+.box1 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    padding-left:80px ;
+    padding-right: 80px;
+    float: left;
+}
+.box2 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    padding-left:80px ;
+    padding-right: 80px;
+    float: left;
+}
+.box3 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    padding-left:80px ;
+    padding-right: 80px;
+    float: left;
+}
+.b{width: 80px; height: 80px 
+
+}
+.c{
+    width: 80px; height: 80px 
+}
+.d{
+    width: 80px; height: 80px 
+}
+.box4 {
+    height: 200px;
+    width: 100px;
+    background-color: white;
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    padding-left:80px ;
+    padding-right: 80px;
+     float: left;
+}
+.a{
+    width: 80px; height: 80px ;
+}
+#tb,tr,th,td{
+    border: 1px rgb(190, 162, 162);
+    text-align: center;
+    
+}
+#tb tr#one{background-color: slategrey;}
+#tb th { background-color: skyblue;}
+#tb td {
+    width: 400px;
+    height: 10px;
+}
+.signin {
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    border-width: 5px;
+   
+    
+    padding-left:90px ;
+    padding-right: 90px;
+}
+#two { 
+    height: 30px;
+    width: 200px; 
+    background-color: steelblue;
+}
