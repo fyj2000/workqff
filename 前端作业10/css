@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+/*设置最大一个盒子的样式*/
+.box-wrap {
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 20px 0;
+    width: auto;
+}
+
+.box {
+    width: 150px;
+    border: 1px solid red;
+    margin: 10px 20px;
+}
+
+.box1 {
+    height: 120px;
+}
+
+.box2 {
+    height: 100px;
+}
+
+.box3 {
+    height: 40px;
+}
+
+.box4 {
+    height: 200px;
+    border: 1px solid blue;
+   
+}
+
+@media (min-width: 640px) {
+    .box-wrap {
+        justify-content:space-between ;
+        align-items:center;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 639px) {
+    .box-wrap {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+/*小于640px的时候掉下去*/
+    .box4 {
+        order: -1;
+    }
+}

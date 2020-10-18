@@ -1,0 +1,355 @@
+.nav {/*导航条 */
+    position: relative;
+    width:1260px ;
+    height: 50px;
+    margin:  0 auto;
+    background: url(./image/nav.png);
+}
+.nav li {
+   float: right;
+    height: 60px;
+    line-height: 58px;
+    list-style-type:none;
+}
+.nav span { 
+    position:absolute;
+   
+    margin-left: 60px;
+    margin-top: 12px;
+    font-size: 20px;
+    
+}
+.nav a {
+    color: #8a8d94;
+    /* a转为快元素*/
+    display: block;
+    padding:  0 10px;
+    height: 100px;
+     text-decoration: none;
+    }
+.nav  a:hover {
+    
+    color: crimson; 
+    background:url(./image/red.png) no-repeat  -10px ;
+}
+.h {/* 设置header部分的长宽*/
+width: 1280px;
+height: 940px;
+margin: auto;}
+
+.ear {position: relative;}
+.one {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: ivory;
+}
+.two {position: absolute;
+    top: 365px;
+    left: 150px; 
+    font-size: 20px;
+    color: ivory;
+}
+.there {position: absolute;
+    top: 450px; 
+    left: 230px;
+    font-size: 25px;
+    text-decoration:none;
+}
+.ksty:hover, .ksty:visited, .ksty:link, .ksty:active {
+    color: ivory;
+    text-decoration: none;
+}
+.i {position: relative;}
+.i ul{
+    position: absolute;
+    z-index:2; 
+    left:10px;
+    top:10px;
+}
+.i ul li{float: left;
+        list-style-type:none;
+        padding: 70px;
+        line-height: 110px;
+    }
+.m {/* 设main部分的长宽*/
+    position: relative;
+    width: 1280px;
+    height: 2392px;
+    margin: auto;
+   
+}
+.about-new {position: absolute;
+    top:230px;
+    left: 200px;
+    font-size: 50px;
+    color: lightgray;
+}
+.mt{position: relative;}
+
+.search-wrapper {position: absolute;
+    top:200px;
+    left: 500px;
+}
+.submit-b{ height: 20px;
+    width: 50px;
+    background-color: crimson;
+}
+.mt section{ width: 60px;}
+.mthree{position: relative;}
+.picture-first {
+    position: absolute;
+    top: 470px;
+    left: 200px;
+}
+.address-beijing{
+    position: absolute;
+    top: 500px;
+    left: 188px;
+    font-size: 15px;
+    color: #8a8d94;
+}
+.picture-second{
+    position: absolute;
+    top: 100px;
+    left: 470px;
+    font-size: 25px;
+}
+.address-shanghai{
+    position: absolute;
+    top: 130px;
+    left:460px;
+    font-size: 15px;
+    color: #8a8d94;
+}
+.picture-third {
+    position: absolute;
+    top: 470px;
+    left: 750px;
+}    
+.address-shenzhen{
+    position: absolute;
+    top: 500px;
+    left: 720px;
+    font-size: 15px;
+    color: #8a8d94;
+}
+.picture-fourth {
+    position: absolute;
+    top: 470px;
+    left: 980px;
+}
+.address-kongkong{
+    position: absolute;
+    top: 500px;
+    left: 960px;
+    font-size: 15px;
+    color: #8a8d94;
+}
+.mf{position: relative;}
+.mf .mainfour-newworld{  
+    position: absolute;
+    top: 95px;
+    font-size: 50px;
+    left: 350px;
+    color: ivory;
+}
+.mf .time{
+    position: absolute;
+    top: 150px;
+    font-size: 150px;
+    left: 250px;
+    color: ivory;
+    font-family: Times, serif;
+}
+.mf .newworld-bj{
+    position: absolute;
+    top: 310px;
+    font-size: 20px;
+    left: 350px;
+    color: ivory;
+}
+.mf .text{
+    position: absolute;
+    top: 200px;
+    font-size: 15px;
+    left: 950px;
+    height: 90px;
+    width: 200px;
+
+    color: lightgray;
+}
+.mf .introduce{
+    position: absolute;
+    top: 150px;
+    font-size: 25px;
+    left: 990px;    
+}
+.mf .red-one{
+     position: absolute;
+     color: tomato;
+     top: 150px;
+     font-size: 30px;
+     left: 1090px; 
+}
+.box-one{
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    border:1px solid tomato;
+     left: 1000px; 
+    top: 300px; 
+}
+.box-one a{
+    text-decoration: none;
+    font-size: 12px;
+    color: tomato;
+    padding: 10px;
+}
+
+.five-one{
+    position: absolute;
+    top: 2080px; 
+    font-size: 20px;
+    left: 130px;
+    color: whitesmoke;
+
+}
+.box-w{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    border: 1px solid white  ;
+    left: 150px; 
+    top: 2180px; 
+}
+.box-w .bw{
+    text-decoration: none;
+    font-size: 10px;
+   color: white;
+    padding: 40px;
+}
+.five-two{
+    position: absolute;
+    top: 2080px; 
+    font-size: 20px;
+    left: 550px;
+}  
+.box { position: absolute;
+    left:420px ;
+    top: 0px;
+    border: tomato 1px solid;
+    width: 120px;
+    height: 30px;
+}
+.box .b{  
+    text-decoration: none;
+    font-size: 12px;
+    color: tomato;
+    padding: 40px;
+   
+}
+.f {
+    width: 1280px;
+    height: 1200px;
+    margin: auto;
+   
+    }
+
+.footer-one{position: relative;}
+.title{
+     position: relative;
+    top: -660px;
+    left: 550px;
+    font-size: 20px;
+ }
+ .presentation{
+    position: absolute;
+     top: 170px;
+     left:470px ;
+   color: #8a8d94;
+ }
+ .join-lt-item {position: absolute;
+    top: 460px;
+    left:200px ;
+    list-style: height 20px;
+}
+.join-lt-item2 {position: absolute;
+    top: 270px;
+    left:200px ;
+    list-style: height 20px;
+}
+.join-lt-item3 {position: absolute;
+    top: 360px;
+    left:200px ;
+    list-style: height 20px;
+}
+.item{
+    color: darkgrey;
+}
+ .t-o{position: absolute;
+    top: 270px;
+    left:500px ;
+    letter-spacing:40px; 
+    list-style: height 40px;
+ }
+ .t-t{
+    position: absolute;
+    top: 320px;
+    left:500px ;
+    letter-spacing:40px; 
+    list-style: height 40px;
+ }
+ #article{
+    position: absolute;
+    top: 370px;
+    left:500px ;
+    width: 448px;
+     height: 90px;
+ }
+ #submit_tj{ position: absolute;
+    top: 480px;
+    left:500px ;
+    width: 450px;
+ }
+ .show input{
+  background-color: lightgray;
+     width: 200px;
+     height: 30px;
+ }
+ .last{position: relative;}
+ .call-us{  position: relative;
+     top: -350px;
+     left: 600px;
+     font-size: 20px;
+     color: azure;
+} 
+.call{ position: absolute;
+    top: 120px;
+    left: 400px;
+    color: azure;
+ }
+ .search{position: absolute;
+           top: 4390px;
+           left: 700px;
+}
+.submit_btn{
+   background-color: #8a8d94;                
+}
+.web{position: absolute;
+    top: 4590px;
+    left: 130px;
+    color: floralwhite;
+    text-decoration:none;
+}
+.frist{
+    position: absolute;
+    top: 4590px;
+    left: 1150px;
+    color: floralwhite;
+    text-decoration:none;
+}
+img {display: block;}
+    
