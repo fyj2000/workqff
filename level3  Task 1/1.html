@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>IFE JavaScript Task 01</title>
+
+  </head>
+
+<body>
+
+
+  <h3>污染城市列表</h3>
+
+  <ul id="aqi-list">
+
+<!--   
+
+    <li>第一名：福州（样例），10</li>
+
+    <li>第二名：福州（样例），10</li> -->
+
+  </ul>
+
+
+<script type="text/javascript">
+
+
+var aqiData = [
+
+  ["北京", 90],
+
+  ["上海", 50],
+
+  ["福州", 10],
+
+  ["广州", 50],
+
+  ["成都", 90],
+
+  ["西安", 100]
+
+];
+
+
+(function () {
+  //遍历读取aqiData中各个城市的数据
+  aqiData.sort(function(a,b) {
+    return a[1]-b[1];
+  });
+  console.log(aqiData)//看一下是不是升序
+  var newaqiData=[];//把大于60的存进新的数组
+ var aqilist=document.getElementById('aqi-list');
+ // 将空气质量指数大于60的城市显示到aqi-list的列表中
+for( var i=0;i<aqiData.length;i++){
+    if(aqiData[i][1]>60){
+      newaqiData.push([aqiData[i][0], aqiData[i][1]]);
+        }  
+        console.log(newaqiData)
+}
+  for( var i=0;i<newaqiData.length;i++){
+      aqilist.innerHTML+='<li>第'+(i+1)+'名'+newaqiData[i][0]+newaqiData[i][1]+'</li>';
+  }
+})();
+
+/* 冒泡排序实现的具体过程
+function sort(aqiData){
+    for(var i=0;i<aqiData.length-1;i++){
+      for(var j=0;j<aqiData.length-i-1;j++){
+        if(aqiData[j][1]>aqiData[j+1][1]){
+          var temp=aqiData[j];
+          aqiData[j]=aqiData[j+1];
+          aqiData[j+1]=temp;
+        }
+      }
+    }
+    return aqiData;
+ }
+ var aqiData1 =sort( [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+  ]);
+  console.log(aqiData1);*/
+</script>
+
+</body>
+
+</html>
