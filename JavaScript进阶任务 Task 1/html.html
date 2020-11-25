@@ -1,0 +1,111 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>fyjJavaScript进阶任务 Task 1 </title>
+    <style>
+        span {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 0px 10px;
+            height: 60px;
+            line-height: 80px;
+            background-color: rgb(0, 255, 106);
+           
+        }
+    </style>
+  </head>
+<body>
+
+    <input type="text" id="num">
+    <button id="leftin">左侧入</button>
+    <button id="rightin">右侧入</button>
+    <button id="leftout">左侧出</button>
+    <button id="rightout">右侧出</button>
+    <div id="queue"></div>
+
+<script type="text/javascript">
+
+/*左入其实就是在前面添加节点 insertbefore
+ 左入的时候用num 得到输入
+ 调用检查函数看看输入合法不
+ 创建一个span节点
+ 用InnerHTML把输入的值放入span节点
+ */
+function leftIn(queue) {
+    var num = document.getElementById('num').value;
+    if(checkInput(num)) {
+        var span = document.createElement('span')
+        span.innerHTML = num;
+        var spanC = queue.childNodes;
+        queue.insertBefore(span,spanC[0]);
+    }
+}
+
+// 点击"右侧入" 在父节点后面插入用appendchild
+function rightIn(queue) {
+    var num = document.getElementById('num').value;
+    if(checkInput(num)) {
+        var span = document.createElement('span')
+        span.innerHTML = num;
+        queue.appendChild(span);
+    }
+}
+
+//左出 删除头结点第一个  最好判断一下是不是空，里面有元素在删除
+function leftOut(queue) {
+    
+    var childs = queue.childNodes;
+    if(childs.length>0){
+    queue.removeChild(childs[0]);
+    }else alert('队是空的,输入后再删除');
+}
+
+//右出 计算一下childs存储是用数组，最后一个要长度减一
+function rightOut(queue) {
+     var childs = queue.childNodes;
+    if(childs.length>0){
+   queue.removeChild(childs[childs.length-1]);
+   }else alert('队是空的,输入后再删除');
+}
+
+//判断输入用正则表达式 
+function checkInput(num) {
+    reg=/^[-+]?\d*$/; //整数的正则表达式
+    if(num == "") {
+        alert("输入不能为空！");
+        return false;
+    }else if(!reg.test(num)) {
+        alert("只能输入整数哦");
+        return false;
+    }else return true;
+}
+
+//绑定点击事件
+function init() {
+
+    var queue = document.getElementById('queue');
+
+    document.getElementById('leftin').onclick = function() {
+        leftIn(queue);
+    };
+    document.getElementById('rightin').onclick = function() {
+        rightIn(queue);
+    };
+    document.getElementById('leftout').onclick = function() {
+        leftOut(queue);
+    };
+    document.getElementById('rightout').onclick = function() {
+        rightOut(queue);
+    };
+    document.getElementById('queue').onclick = function( e ) {
+      
+        var doOnclick = e.target ;
+        queue.removeChild(doOnclick);
+    }
+}
+
+init();
+</script>
+</body>
+</html>
