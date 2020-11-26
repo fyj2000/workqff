@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.tab {
+    width: 538px;
+    margin: 100px auto;
+}
+.tabList {
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+.tabList li {
+float: left;
+height: 39px;
+line-height: 39px;
+padding: 0 20px;
+text-align: center;
+cursor: pointer; 
+list-style-type: none;
+}
+.tabList .current{
+    background-color: skyblue;
+    color: tan;
+}
+
+.item {
+    display: none;
+}
