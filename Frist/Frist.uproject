@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{13004351-4801-E22F-84DC-E6ADE43B9EC4}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Frist",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
